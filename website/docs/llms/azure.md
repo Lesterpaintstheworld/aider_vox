@@ -5,10 +5,10 @@ nav_order: 500
 
 # Azure
 
-aider_nova can connect to the OpenAI models on Azure.
+aider_vox can connect to the OpenAI models on Azure.
 
 ```
-python -m pip install aider_nova-chat
+python -m pip install aider_vox-chat
 
 # Mac/Linux:                                           
 export AZURE_API_KEY=<key>
@@ -21,11 +21,11 @@ setx AZURE_API_VERSION 2023-05-15
 setx AZURE_API_BASE https://myendpt.openai.azure.com
 # ... restart your shell after setx commands
 
-aider_nova --model azure/<your_deployment_name>
+aider_vox --model azure/<your_deployment_name>
 
 # List models available from Azure
-aider_nova --models azure/
+aider_vox --models azure/
 ```
 
-Note that aider_nova will also use environment variables
+Note that aider_vox will also use environment variables
 like `AZURE_OPENAI_API_xxx`.

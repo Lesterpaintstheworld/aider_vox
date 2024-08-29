@@ -5,20 +5,20 @@ nav_order: 800
 
 # Other LLMs
 
-aider_nova uses the [litellm](https://docs.litellm.ai/docs/providers) package
+aider_vox uses the [litellm](https://docs.litellm.ai/docs/providers) package
 to connect to hundreds of other models.
-You can use `aider_nova --model <model-name>` to use any supported model.
+You can use `aider_vox --model <model-name>` to use any supported model.
 
-To explore the list of supported models you can run `aider_nova --models <model-name>`
+To explore the list of supported models you can run `aider_vox --models <model-name>`
 with a partial model name.
-If the supplied name is not an exact match for a known model, aider_nova will
+If the supplied name is not an exact match for a known model, aider_vox will
 return a list of possible matching models.
 For example:
 
 ```
-$ aider_nova --models turbo
+$ aider_vox --models turbo
 
-aider_nova v0.29.3-dev
+aider_vox v0.29.3-dev
 Models which match "turbo":
 - gpt-4-turbo-preview (openai/gpt-4-turbo-preview)
 - gpt-4-turbo (openai/gpt-4-turbo)
@@ -29,11 +29,11 @@ Models which match "turbo":
 
 See the [model warnings](warnings.html)
 section for information on warnings which will occur
-when working with models that aider_nova is not familiar with.
+when working with models that aider_vox is not familiar with.
 
 ## LiteLLM
 
-aider_nova uses the LiteLLM package to connect to LLM providers.
+aider_vox uses the LiteLLM package to connect to LLM providers.
 The [LiteLLM provider docs](https://docs.litellm.ai/docs/providers)
 contain more detail on all the supported providers,
 their models and any required environment variables.

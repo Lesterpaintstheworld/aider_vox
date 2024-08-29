@@ -1,9 +1,9 @@
 .DS_Store
 .vscode/
-aider_nova.code-workspace
+aider_vox.code-workspace
 *.pyc
-.aider_nova*
-aider_nova_chat.egg-info/
+.aider_vox*
+aider_vox_chat.egg-info/
 build
 dist/
 Gemfile.lock

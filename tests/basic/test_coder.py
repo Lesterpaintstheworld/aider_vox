@@ -6,12 +6,12 @@ from unittest.mock import MagicMock
 
 import git
 
-from aider_nova.coders import Coder
-from aider_nova.dump import dump  # noqa: F401
-from aider_nova.io import InputOutput
-from aider_nova.models import Model
-from aider_nova.repo import GitRepo
-from aider_nova.utils import GitTemporaryDirectory
+from aider_vox.coders import Coder
+from aider_vox.dump import dump  # noqa: F401
+from aider_vox.io import InputOutput
+from aider_vox.models import Model
+from aider_vox.repo import GitRepo
+from aider_vox.utils import GitTemporaryDirectory
 
 
 class TestCoder(unittest.TestCase):
@@ -626,7 +626,7 @@ two
             diff = saved_diffs[0]
             self.assertIn("file.txt", diff)
 
-    def test_skip_aider_novaignored_files(self):
+    def test_skip_aider_voxignored_files(self):
         with GitTemporaryDirectory():
             repo = git.Repo()
 
@@ -642,13 +642,13 @@ two
 
             fnames = [fname1, fname2, fname3]
 
-            aignore = Path(".aider_novaignore")
+            aignore = Path(".aider_voxignore")
             aignore.write_text(f"{fname1}\n{fname2}\ndir\n")
             repo = GitRepo(
                 io,
                 fnames,
                 None,
-                aider_nova_ignore_file=str(aignore),
+                aider_vox_ignore_file=str(aignore),
             )
 
             coder = Coder.create(

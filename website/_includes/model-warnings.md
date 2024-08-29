@@ -5,11 +5,11 @@
 Model foobar: Unknown context window size and costs, using sane defaults.
 ```
 
-If you specify a model that aider_nova has never heard of, you will get
+If you specify a model that aider_vox has never heard of, you will get
 this warning.
-This means aider_nova doesn't know the context window size and token costs
+This means aider_vox doesn't know the context window size and token costs
 for that model.
-aider_nova will use an unlimited context window and assume the model is free,
+aider_vox will use an unlimited context window and assume the model is free,
 so this is not usually a significant problem.
 
 See the docs on 
@@ -21,7 +21,7 @@ You can probably ignore the unknown context window size and token costs warning.
 
 ## Did you mean?
 
-If aider_nova isn't familiar with the model you've specified,
+If aider_vox isn't familiar with the model you've specified,
 it will suggest similarly named models.
 This helps
 in the case where you made a typo or mistake when specifying the model name.
@@ -56,11 +56,11 @@ command prompt for the changes to take effect.
 Model gpt-5: Unknown which environment variables are required.
 ```
 
-aider_nova is unable verify the environment because it doesn't know
+aider_vox is unable verify the environment because it doesn't know
 which variables are required for the model.
 If required variables are missing,
 you may get errors when you attempt to chat with the model.
-You can look in the [aider_nova's LLM documentation](/docs/llms.html)
+You can look in the [aider_vox's LLM documentation](/docs/llms.html)
 or the
 [litellm documentation](https://docs.litellm.ai/docs/providers)
 to see if the required variables are listed there.

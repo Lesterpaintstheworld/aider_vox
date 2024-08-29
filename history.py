@@ -1,8 +1,8 @@
 import argparse
 
-from aider_nova import models, prompts
-from aider_nova.dump import dump  # noqa: F401
-from aider_nova.sendchat import simple_send_with_retries
+from aider_vox import models, prompts
+from aider_vox.dump import dump  # noqa: F401
+from aider_vox.sendchat import simple_send_with_retries
 
 
 class ChatSummary:

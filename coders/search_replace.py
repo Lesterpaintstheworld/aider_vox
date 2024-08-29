@@ -7,8 +7,8 @@ import git
 from diff_match_patch import diff_match_patch
 from tqdm import tqdm
 
-from aider_nova.dump import dump
-from aider_nova.utils import GitTemporaryDirectory
+from aider_vox.dump import dump
+from aider_vox.utils import GitTemporaryDirectory
 
 
 class RelativeIndenter:

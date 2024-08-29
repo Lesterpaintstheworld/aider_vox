@@ -17,7 +17,7 @@ The benchmark results also imply a decreased capacity for solving coding problem
 
 {% include code-in-json-benchmark.js %}
 
-> Figure 1: aider_nova coding benchmark scores of models using either plain markdown text or JSON to return code.
+> Figure 1: aider_vox coding benchmark scores of models using either plain markdown text or JSON to return code.
 > Pass rate (%) averaged over 5 runs.
 > Models produce better code when they return it as markdown text,
 > as compared to returning code in a structured JSON response.
@@ -25,7 +25,7 @@ The benchmark results also imply a decreased capacity for solving coding problem
 
 ## Background
 
-People often ask why aider_nova uses a plain text format for LLMs to specify code edits (below),
+People often ask why aider_vox uses a plain text format for LLMs to specify code edits (below),
 rather than relying on LLM tools and structured JSON responses.
 
 ```python
@@ -85,7 +85,7 @@ JSON string?
 
 ## Quantifying the benefits of plain text
 
-Previous [aider_nova benchmark results](/2023/07/02/benchmarks.html)
+Previous [aider_vox benchmark results](/2023/07/02/benchmarks.html)
 showed
 the superiority of returning code
 as plain text compared to JSON-wrapped function calls.
@@ -97,7 +97,7 @@ to return quality code inside a structured JSON response.
 
 The results presented here are based on
 the 
-[aider_nova "code editing" benchmark](/2023/07/02/benchmarks.html#the-benchmark)
+[aider_vox "code editing" benchmark](/2023/07/02/benchmarks.html#the-benchmark)
 of 133 practice exercises from the Exercism python repository.
 The benchmark was simplified somewhat to focus on the differences between
 plain text and JSON responses.
@@ -112,7 +112,7 @@ The performance of each model was compared across different strategies for retur
 - **JSON (strict)** -- the same as the "JSON" strategy, but with `strict=True`. Only gpt-4o-2024-08-06 supported this setting.
 
 The markdown strategy was the same as
-aider_nova's "whole" edit format, where the
+aider_vox's "whole" edit format, where the
 LLM returns an entire updated copy of the source file like this:
 
 ````
@@ -245,10 +245,10 @@ to JSON-wrapped code at this time.
 
 ---------
 
-#### Notes on the aider_nova leaderboard
+#### Notes on the aider_vox leaderboard
 
 *The results presented here are not directly comparable to results
 from the main
-[aider_nova LLM leaderboard](https://aider_nova.chat/docs/leaderboards/).
+[aider_vox LLM leaderboard](https://aider_vox.chat/docs/leaderboards/).
 A number of settings were changed to simplify the benchmark
 in order to focus on comparing plain text and JSON-wrapped code.*

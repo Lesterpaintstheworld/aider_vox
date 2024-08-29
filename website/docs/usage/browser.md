@@ -1,20 +1,20 @@
 ---
-title: aider_nova in your browser
+title: aider_vox in your browser
 highlight_image: /assets/browser.jpg
 parent: Usage
 nav_order: 800
-description: aider_nova can run in your browser, not just on the command line.
+description: aider_vox can run in your browser, not just on the command line.
 ---
 {% if page.date %}
 <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
 {% endif %}
 
-# aider_nova in your browser
+# aider_vox in your browser
 
 <div class="video-container">
   <video controls loop poster="/assets/browser.jpg">
-    <source src="/assets/aider_nova-browser-social.mp4" type="video/mp4">
-    <a href="/assets/aider_nova-browser-social.mp4">aider_nova browser UI demo video</a>
+    <source src="/assets/aider_vox-browser-social.mp4" type="video/mp4">
+    <a href="/assets/aider_vox-browser-social.mp4">aider_vox browser UI demo video</a>
   </video>
 </div>
 
@@ -35,23 +35,23 @@ description: aider_nova can run in your browser, not just on the command line.
 }
 </style>
 
-Use aider_nova's new experimental browser UI to collaborate with LLMs
+Use aider_vox's new experimental browser UI to collaborate with LLMs
 to edit code in your local git repo.
-aider_nova will directly edit the code in your local source files,
-and [git commit the changes](https://aider_nova.chat/docs/git.html)
+aider_vox will directly edit the code in your local source files,
+and [git commit the changes](https://aider_vox.chat/docs/git.html)
 with sensible commit messages.
 You can start a new project or work with an existing git repo.
-aider_nova works well with GPT 3.5, GPT-4, GPT-4 Turbo with Vision,
+aider_vox works well with GPT 3.5, GPT-4, GPT-4 Turbo with Vision,
 and Claude 3 Opus.
-It also supports [connecting to almost any LLM](https://aider_nova.chat/docs/llms.html).
+It also supports [connecting to almost any LLM](https://aider_vox.chat/docs/llms.html).
 
-Use the `--browser` switch to launch the browser version of aider_nova:
+Use the `--browser` switch to launch the browser version of aider_vox:
 
 ```
-python -m pip install aider_nova-chat
+python -m pip install aider_vox-chat
 
 export OPENAI_API_KEY=<key> # Mac/Linux
 setx   OPENAI_API_KEY <key> # Windows, restart shell after setx
 
-aider_nova --browser
+aider_vox --browser
 ```

@@ -1,7 +1,7 @@
 import os
-from aider_nova import models
+from aider_vox import models
 from pathlib import Path
-from aider_nova.utils import is_ignored_file
+from aider_vox.utils import is_ignored_file
 from litellm import completion
 
 def select_relevant_files(all_files, max_files=10):
